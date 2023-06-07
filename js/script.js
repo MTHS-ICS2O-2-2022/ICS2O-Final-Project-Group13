@@ -14,4 +14,6 @@ function myButtonClicked() {
   //output
   document.getElementById("answer").innerHTML =
     "The input is: " + input + "."
+  document.getElementById("tally").innerHTML =
+    "The total is: " + input + "."
 }
