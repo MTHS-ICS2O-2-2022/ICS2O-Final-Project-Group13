@@ -32,7 +32,7 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div class="page-content">Enter...</div>
+        <div class="page-content">Enter how many dice you would like to roll</div>
         <br />
         <!-- Simple Textfield for integers-->
         <form action="#">
@@ -42,11 +42,11 @@
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="length"
+              id="input"
             />
             <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="demo-input"
-              >Input goes here</label
+            <label class="mdl-textfield__label" for="input"
+              >Dices</label
             >
             <!-- class "mdl-textfield__error" -->
             <span class="mdl-textfield__error">Input is not a number</span>
@@ -58,7 +58,7 @@
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          Calculate
+          Roll!
         </button>
         <br />
         <br />
