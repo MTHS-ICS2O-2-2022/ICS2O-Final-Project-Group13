@@ -7,13 +7,19 @@
 "use strict"
 
 function myButtonClicked() {
-  //input
-  const input = parseFloat(
-    document.getElementById("input").value
-  )
-  //output
-  document.getElementById("answer").innerHTML =
-    "The input is: " + input + "."
-  document.getElementById("tally").innerHTML =
-    "The total is: " + input + "."
+  var input = parseInt(document.getElementById("input").value)
+  
+  var answerElement = document.getElementById("answer")
+  var tallyElement = document.getElementById("tally")
+  var output = ""
+  var total = 0
+  
+  for (var counter = 0; counter < input; counter++) {
+    var roll = Math.floor(Math.random() * 6) + 1
+    output += '<img src="./images/dice-' + roll + '.png" alt="Dice ' + roll + '" />'
+    total += roll
+  }
+  
+  answerElement.innerHTML = output
+  tallyElement.innerHTML = "The total is " + total
 }
